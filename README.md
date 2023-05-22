@@ -1,6 +1,6 @@
 ## :page_with_curl: Projeto
 
-![NLW spacetime gif]()
+![NLW spacetime gif](https://github.com/Rodrigo001-dev/nlw-spacetime/blob/main/.github/images/nlw-spacetime.gif)
 
 Aplicação feita na NLW spacetime, onde o objetivo da aplicação foi criar uma cápsula do tempo para que o usuário possa se lembrar de momentos importantes da sua vida em uma timeline
 
