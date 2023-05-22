@@ -1,5 +1,3 @@
-'use client'
-
 import { ChangeEvent, useState } from 'react'
 
 export function MediaPicker() {
@@ -20,11 +18,11 @@ export function MediaPicker() {
   return (
     <>
       <input
+        onChange={onFileSelected}
         type="file"
         name="coverUrl"
         id="media"
         accept="image/*"
-        onChange={onFileSelected}
         className="invisible h-0 w-0"
       />
 

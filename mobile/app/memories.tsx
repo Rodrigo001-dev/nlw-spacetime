@@ -53,7 +53,7 @@ export default function NewMemory() {
       className="flex-1"
       contentContainerStyle={{ paddingBottom: bottom, paddingTop: top }}
     >
-      <View className="mt-4 flex-row items-center px-8">
+      <View className="mt-4 flex-row items-center gap-2 px-8">
         <NLWLogo />
 
         <View className="flex-row gap-2">

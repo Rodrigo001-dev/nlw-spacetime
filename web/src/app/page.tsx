@@ -1,12 +1,12 @@
+import Link from 'next/link'
 import { cookies } from 'next/headers'
 import Image from 'next/image'
 import dayjs from 'dayjs'
 import ptBr from 'dayjs/locale/pt-br'
+import { ArrowRight } from 'lucide-react'
 
 import { EmptyMemories } from '@/components/EmptyMemories'
 import { api } from '@/lib/api'
-import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
 
 dayjs.locale(ptBr)
 
@@ -42,7 +42,7 @@ export default async function Home() {
     <div className="flex flex-col gap-10">
       {memories.map((memory) => {
         return (
-          <div key={memory.id} className="space-y-4">
+          <div key={memory.id} className="space-y-4 px-8">
             <time className="before-bg-gray-50 -ml-8 flex items-center gap-2 text-sm text-gray-100 before:h-px before:w-5">
               {dayjs(memory.createdAt).format('D[ de ]MMM[, ]YYYY')}
             </time>
@@ -62,7 +62,7 @@ export default async function Home() {
               className="flex items-center gap-2 text-sm text-gray-200 hover:text-gray-100"
             >
               Ler mais
-              <ArrowLeft className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         )
